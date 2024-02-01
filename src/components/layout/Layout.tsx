@@ -47,7 +47,9 @@ export default function Layout(){
       <div className={styles.content}>
         <Outlet />
       </div>
-      <TabBar />
+      <div className={styles.bar}>
+        <TabBar />
+      </div>
     </div>
   )
 }
