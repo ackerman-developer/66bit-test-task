@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+# Тестовое задание для компании "66bit"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание выполненной задачи:
 
-Currently, two official plugins are available:
+- Было разработано приложение для получения новостей и тем для приложения с API.
+- Веб-приложение реализовано на фраймворке React.
+- Для стилей был использован Sass.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Стэк
+- React 
+- SCSS
+- TS
+- Axios 
+- React Router Dom 
+- Redux Toolkit
+- Vite
 
-## Expanding the ESLint configuration
+# Установка
+## Клонируем репозиторий
+    git@github.com:ackerman-developer/66bit-test-task.git
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Локальный запуск
 
-- Configure the top-level `parserOptions` property like this:
+Необходимо в терминале прописать команды:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+    # Установить зависимости
+    npm install
+
+    # Запустить React приложение
+    npm run dev
+    
+    # Собрать проект
+    npm run build
+
+## Структура проекта
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+.
+└── .../
+    ├── dist/ - Сборка проекта
+    ├── public/ - Каталог, в котором лежат файлы, изменяемые и перемещаемые бандлером
+    └── src/ - Корневая папка с кодом
+        ├── assets/ 
+        ├── components/
+        ├── hooks/
+        ├── context/
+        ├── pages/
+        ├── providers/
+        ├── services/
+        ├── store/
+        ├── types/
+        ├── App.tsx
+        ├── const.ts
+        ├── index.scss
+        ├── main.tsx
+        └── vite-env.d.ts
+```
