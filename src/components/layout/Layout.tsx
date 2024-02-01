@@ -38,7 +38,7 @@ export default function Layout(){
 
   const layoutStyles = {
     backgroundColor: theme.mainColor,
-    color: theme.textColor,
+    color: theme.textColor
   }
 
   return(

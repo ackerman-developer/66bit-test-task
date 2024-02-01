@@ -1,4 +1,4 @@
-import { useState, ReactNode, useEffect } from "react";
+import { useState, ReactNode, useEffect, FC } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { IThemeData } from "../types/theme-data";
 
@@ -6,7 +6,7 @@ interface IProps{
   children: ReactNode
 }
 
-export const ThemeProvider: React.FC<IProps> = ({children}) => {
+export const ThemeProvider: FC<IProps> = ({children}) => {
   const storedTheme = JSON.parse(localStorage.getItem("selectedTheme") || "null")
   const [theme, setTheme] = useState<IThemeData>(storedTheme)
 

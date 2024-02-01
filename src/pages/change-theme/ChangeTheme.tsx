@@ -17,9 +17,11 @@ export default function ChangeTheme() {
 
   return (
     <div className={styles.container}>
-      <button onClick={() => changeTheme(lightTheme)}>Светлая тема</button>
-      <button onClick={() => changeTheme(darkTheme)}>Темная тема</button>
-      <button onClick={() => changeTheme(blueTheme)}>Синия тема</button>
+      <div className={styles.content}>
+        <button onClick={() => changeTheme(lightTheme)}>{lightTheme.title}</button>
+        <button onClick={() => changeTheme(darkTheme)}>{darkTheme.title}</button>
+        <button onClick={() => changeTheme(blueTheme)}>{blueTheme.title}</button>
+      </div>
     </div>
   )
 }
