@@ -1,13 +1,5 @@
 @import '/src//assets/styles/global.scss';
 
-.container{
-  button{
-    padding: 20px;
-    min-width: 150px;
-    border-radius: 15px;
-  }
-}
-
 .content{
   @include flex-center;
   flex-direction: column;

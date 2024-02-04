@@ -1,3 +1,14 @@
+@import '/src/assets//styles/global.scss';
+
 .loader {
   margin: 20px;
+}
+
+.container{
+  margin-bottom: 80px;
+  button{
+    @include font-for-button;
+    width: 100%;
+    padding: 15px;
+  }
 }

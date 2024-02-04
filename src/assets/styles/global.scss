@@ -4,4 +4,8 @@
   justify-content: center;
 }
 
+@mixin font-for-button{
+  font-family: 'Inter';
+  font-size: 16px;
+}
 

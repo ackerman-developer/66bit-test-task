@@ -13,8 +13,8 @@ export default function CardNews({news}: ICardNewsProps){
     <div className={styles.card} style={{ backgroundColor: theme.secondColor, color: theme.textColor }}>
       <h2>{news.title}</h2>
       <p>{news.content}</p>
-      <p>{news.createdAt}</p>
-      <p>{news.updatedAt}</p>
+      <p>Создана: {news.createdAt}</p>
+      <p>Отредактирована: {news.updatedAt}</p>
     </div>
   )
 }

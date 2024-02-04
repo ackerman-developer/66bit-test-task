@@ -1,0 +1,11 @@
+@import '/src//assets/styles/global.scss';
+
+.button{
+  button{
+    @include font-for-button;
+    padding: 20px;
+    min-width: 150px;
+    border-radius: 15px;
+    border: 3px solid;
+  }
+}
